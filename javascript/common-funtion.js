@@ -18,4 +18,10 @@ function ticketPrice(paren, sheetNumber, sheetPrice) {
 
 function totalPrice(elemets) {
     const totalp = document.getElementsByClassName(elemets)
+    let total = 0 ;
+    for(const item of totalp){
+        total += parseInt(item.innerText)
+    }
+    return total ;
 }
+

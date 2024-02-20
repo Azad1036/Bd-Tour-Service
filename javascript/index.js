@@ -13,10 +13,12 @@ const price = document.getElementById('sheetPrice')
 const singleprice = parseInt(price.innerText)
 
 const total = document.getElementById('totalPrice');
-const totalPrice = parseInt(total)
+const totalPrice1 = parseInt(total.innerText)
+
 
 const grand = document.getElementById('grandTotal');
-const grandtotal = parseInt(total)
+const grandtotal = parseInt(total.innerText)
+
 
 for(const sheat of booksheet) {
     sheat.addEventListener('click', function(e){
@@ -36,6 +38,9 @@ for(const sheat of booksheet) {
     }
     const sheetName = e.target.innerText
     ticketPrice(push,sheetName,singleprice)
+    const items = totalPrice('newclass')
+    total.innerText = items 
+    grand.innerText = items
     }
     else{
         alert('Maximun Sheet Selected... Black e Sheet Sell Off Arekber Jodi 4 ter basi Sheet Select koro nid block kore dibo... just kiding')
@@ -43,3 +48,17 @@ for(const sheat of booksheet) {
     
 })
 }
+
+function cupponApply() {
+    if (totalPrice1 === 0 ) {
+        alert('Boro VHai age sheet preshage koren magna paysen je kichu na kine cuppon e click koren aber cupon e click korle apner cuppon hide kore dibo') 
+    }
+    else {
+
+    }
+}
+
+
+
+
+

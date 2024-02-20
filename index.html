@@ -128,7 +128,7 @@
                         <img class="bg-[#FFBF0F] h-36 " src="./images/cupon-devider.png" alt="">
                     </div>
                     <div class="bg-[#FFBF0F] rounded-e-2xl px-10 py-12 ">
-                        <h3 class="text-xl font-extrabold raleway">NEW15</h3>
+                        <h3 class="text-xl font-extrabold raleway" id="cupon-1">NEW15</h3>
                         <p class="raleway text-[#03071280]">Coupon Code</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                      </div>
                      <!-- Bus Seats Availble -->
                      <div class="flex">
-                         <a class="btn bg-[#1DD1001A]  inter rounded-lg"><img src="./images/seat-green-filled.png" alt=""> <span id="total-seats" >40</span>Seats left </a>
+                         <a class="btn bg-[#1DD1001A]  inter rounded-lg"><img src="./images/seat-green-filled.png" alt=""> <span id="total-seats">40</span>Seats left </a>
                      </div>
                      
                     </div>
@@ -353,7 +353,7 @@
          <div class=" bg-[#FFFFFF] mt-5 rounded-xl w-[40%]">
             <div class="bg-[#F7F8F8] m-7 p-7 rounded-xl">
                 <div class="flex justify-between inter font-medium text-[19px]">
-                    <p>Seat <span><sup id="totalbooking">0</sup></span></p>
+                    <p>Seat <span><sup id="totalbooking" class="bg-yellow-400 p-1 rounded-md text-black">0</sup></span></p>
                     <p>Class</p>
                     <p>Price</p>
                 </div>
@@ -367,8 +367,15 @@
                     <p>BDT <span id="totalPrice">0</span></p>
                 </div>
 
+                <div class="flex justify-between mb-5 inter font-medium text-[19px] hidden">
+                    <p>Discount Price</p>
+                    <p>BDT <span id="discountPrice">0</span></p>
+                </div>
+
+                <div>
                 <input type="text" placeholder="Have any copupon?" id=""  class="p-4 w-[75%]  rounded-2xl inter font-medium text-[19px]">
-                <button class="btn text-[#FFFFFF] bg-[#1DD100]" disabled id="disabledapply">Apply</button>
+                <button onclick="cupponApply()" class="btn text-[#FFFFFF] bg-[#1DD100]" disabled id="disabledapply">Apply</button>
+                </div>
 
                 <div class="flex justify-between my-5 inter font-medium text-[19px]">
                     <p>Grand Total</p>
