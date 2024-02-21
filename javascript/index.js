@@ -41,9 +41,9 @@ for (const sheatnumber of busSheatNumber) {
             }
 
             //next apply btn
-            else if (totalbook === 1) {
-                disabledbtn2.removeAttribute('disabled')
-            }
+            // else if (totalbook === 1) {
+            //     disabledbtn2.removeAttribute('disabled')
+            // }
 
             //added customer sheet name and price
             const div = document.createElement('div');
@@ -110,6 +110,3 @@ function grandTotalPrice(cupponCode) {
     } 
     
 }
-
-
-

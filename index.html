@@ -118,7 +118,7 @@
             <h3 class="raleway font-bold text-[40px] text-center">Best Offers For You</h3>
             <div class="flex justify-around mt-10">
                 <!-- 15% OFF Normal People -->
-                <div class="flex">
+                <div class="flex w-[45%]">
                     <div class="bg-[#FFBF0F] rounded-s-2xl p-10">
                         <h3 class="text-xl font-extrabold inter">15% OFF</h3>
                         <p class="inter font-medium">on your next purchase</p>
@@ -232,12 +232,12 @@
                 <div class="flex px-7 py-2 justify-between">
                     <div class="flex gap-2">
                         <img src="./images/seat-gray.png" alt=""> 
-                        <p>Available</p>
+                        <p class="inter text-[18px]">Available</p>
                         </div>
         
                         <div class="flex gap-2">
                         <img src="./images/seat-green-filled.png" alt=""> 
-                        <p>Available</p>
+                        <p class="inter text-[18px] text-[#1DD100]" >Available</p>
                         </div>
                 </div>
                 <hr class="mx-7">
@@ -393,8 +393,27 @@
                 <input type="number" name="" placeholder="Enter your phone number" id="" required class=" border-[#0307121A] border-2 mx-7 p-4 w-[88%]  rounded-2xl inter font-medium text-[19px]">
                 <p class="inter font-semibold px-7 py-4">Email ID</p>
                 <input type="email" name="" placeholder="Enter your email id" id="" class=" border-[#0307121A] border-2 mx-7 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]">
-                <button class=" btn bg-[#1DD100] text-white mx-7 mt-7 mb-2 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]" id="next-section" disabled>Next</button>
             </div>
+            <!-- Sucssefull Btn Start -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn bg-[#1DD100] mx-7 mt-7 mb-2 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]" onclick="my_modal_5.showModal()">Next</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <div class="flex justify-center p-8">
+                        <img class="" src="./images/success.png" alt="">
+                    </div>
+                    <p class="text-center inter font-bold text-2xl text-[#27AE60]">SUCCESS</p>
+                    <p class="text-center">Thank you for Booking Our Bus Seats. <br>
+                    <p class="inter text-black font-medium text-center">Shortly you will find a confirmation in your email.</p>
+                    <div class="modal-action">
+                        <form method="dialog" class="flex justify-center w-full ">
+                            <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn bg-[#27AE60] text-[#FFFFFF] px-10 border-none ">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+            <!-- Sucssefull Btn End -->
             <div class="flex text-[#03071299] inter mx-7 justify-between ">
                 <p>Terms and Conditions</p>
                 <p>Cancellation Policy</p>
@@ -403,20 +422,6 @@
     </div>
         </section>
         <!-- Bus Shreet Setion End -->   
-
-        <!-- Susess Section  -->
-        <div class="bg-[#FFFFFF] w-1/2 rounded-2xl hidden">
-            <div class="flex justify-center p-8">
-                <img class="" src="./images/success.png" alt="">
-            </div>
-            <p class="text-center inter font-bold text-2xl text-[#27AE60]">SUCCESS</p>
-            <p class="text-center">Thank you for Booking Our Bus Seats. <br>
-                We are working hard to find the best service and deals for you. </p>
-                <p class="inter text-black text-center">Shortly you will find a confirmation in your email.</p>
-            <div class="flex justify-center m-5">
-                <button class="btn bg-[#27AE60] w-[20%] text-[#FFFFFF] px-10 border-none">Continue</button>
-            </div>
-        </div>
     </main>
     <script src="./javascript/common-funtion.js"></script>
     <script src="./javascript/index.js"></script>
