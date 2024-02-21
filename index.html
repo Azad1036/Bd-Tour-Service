@@ -143,7 +143,7 @@
                         <img class="bg-[#F78C9C] h-36 " src="./images/cupon-devider.png" alt="">
                     </div>
                     <div class="bg-[#F78C9C] rounded-e-2xl px-10 py-12 ">
-                        <h3 class="text-xl font-extrabold raleway">Couple 20 </h3>
+                        <h3 class="text-xl font-extrabold raleway">Couple 20</h3>
                         <p class="raleway text-[#03071280]">Coupon Code</p>
                     </div>
                 </div>
@@ -226,6 +226,7 @@
          <div class="bg-[#FFFFFF] mt-5 rounded-2xl w-[60%]">
             <!-- Buy Sheat Main Seciton -->
             <div>
+                    <p class="pt-2 text-xl font-medium text-green-500 text-center hidden" id="maximum-shert">আপনি সর্বোচ্চ চারটা সিট নিতে পারবেন</p>
                 <p class="raleway font-semibold text-2xl p-7">Select Your Seat</p>
                 <hr class="mx-7">
                 <div class="flex px-7 py-2 justify-between">
@@ -353,7 +354,7 @@
          <div class=" bg-[#FFFFFF] mt-5 rounded-xl w-[40%]">
             <div class="bg-[#F7F8F8] m-7 p-7 rounded-xl">
                 <div class="flex justify-between inter font-medium text-[19px]">
-                    <p>Seat <span><sup id="totalbooking" class="bg-yellow-400 p-1 rounded-md text-black">0</sup></span></p>
+                    <p>Seat <span><sup id="totalbooking" class="bg-yellow-400 p-1 rounded-md text-black"> <span>0</span></sup></span></p>
                     <p>Class</p>
                     <p>Price</p>
                 </div>
@@ -367,14 +368,15 @@
                     <p>BDT <span id="totalPrice">0</span></p>
                 </div>
 
-                <div class="flex justify-between mb-5 inter font-medium text-[19px] hidden">
+                <div class="flex justify-between mb-5 inter font-medium text-[19px] hidden" id="remove-discount">
                     <p>Discount Price</p>
                     <p>BDT <span id="discountPrice">0</span></p>
                 </div>
 
                 <div>
-                <input type="text" placeholder="Have any copupon?" id=""  class="p-4 w-[75%]  rounded-2xl inter font-medium text-[19px]">
-                <button onclick="cupponApply()" class="btn text-[#FFFFFF] bg-[#1DD100]" disabled id="disabledapply">Apply</button>
+                <input id="inputVlues" type="text" placeholder="Have any copupon?" id=""  class="p-4 w-[75%]  rounded-2xl inter font-medium text-[19px]">
+                <button onclick="grandTotalPrice('add-btn')" class="btn text-[#FFFFFF] bg-[#1DD100]" disabled id="disabledapply">Apply</button>
+                <!-- <p class="hidden">দয়া করে সঠিক কুপন কোডটি দিন</p> -->
                 </div>
 
                 <div class="flex justify-between my-5 inter font-medium text-[19px]">
@@ -391,7 +393,7 @@
                 <input type="number" name="" placeholder="Enter your phone number" id="" required class=" border-[#0307121A] border-2 mx-7 p-4 w-[88%]  rounded-2xl inter font-medium text-[19px]">
                 <p class="inter font-semibold px-7 py-4">Email ID</p>
                 <input type="email" name="" placeholder="Enter your email id" id="" class=" border-[#0307121A] border-2 mx-7 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]">
-                <button class=" btn bg-[#1DD100] text-white mx-7 mt-7 mb-2 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]">Next</button>
+                <button class=" btn bg-[#1DD100] text-white mx-7 mt-7 mb-2 p-4 w-[88%] rounded-2xl inter font-medium text-[19px]" id="next-section" disabled>Next</button>
             </div>
             <div class="flex text-[#03071299] inter mx-7 justify-between ">
                 <p>Terms and Conditions</p>

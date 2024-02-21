@@ -1,27 +1,17 @@
 
-function ticketPrice(paren, sheetNumber, sheetPrice) {
-    const prantContainer = document.createElement('div')
-    prantContainer.classList.add('flex','justify-between','inter')
-    const p1 = document.createElement('p')
-    p1.innerText = sheetNumber ;
-    const p2 = document.createElement('p')
-    p2.innerText = 'economic'
-    const  p3 = document.createElement('p')
-    p3.innerText = sheetPrice ;
-    p3.classList.add('newclass')
-    prantContainer.appendChild(p1)
-    prantContainer.appendChild(p2)
-    prantContainer.appendChild(p3)
-    paren.appendChild(prantContainer)
+function totalCost(value, cost) {
+    const priceTotal = document.getElementById(value)
+    const price1 = parseInt(priceTotal.innerText)
+    const costing = document.getElementById(cost)
+    const price2 = parseInt(costing.innerText)
+    
+
+    const totalVlaue = price1 + price2
+    priceTotal.innerText = totalVlaue
+
+
 }
 
 
-function totalPrice(elemets) {
-    const totalp = document.getElementsByClassName(elemets)
-    let total = 0 ;
-    for(const item of totalp){
-        total += parseInt(item.innerText)
-    }
-    return total ;
-}
+
 
