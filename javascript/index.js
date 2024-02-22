@@ -86,7 +86,7 @@ function grandTotalPrice(cupponCode) {
     }
     else{
         const cuponcods = document.getElementById('inputVlues').value
-        if (cuponcods === "New15") {
+        if (cuponcods === 'NEW15') {
             const discount = totals * 15 / 100
             document.getElementById('discountPrice').innerText = discount
             document.getElementById('remove-discount').classList.remove('hidden')
